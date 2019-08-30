@@ -34,14 +34,11 @@ public class ThreadedSocket implements Runnable {
             String[] httpArgs = line.split(" ");
             
             String url = httpArgs[1];
-            for(int i = 0; i < url.length(); i++)
-            {
-                char c = url.charAt(i);
-                if(c == '.')
+            if(url.includes("..")
                 {
                     throw new Exception("Stop trying to hack!");
                 }
-            }
+            
 
             if (httpArgs[1].equals("/")) {
                 
