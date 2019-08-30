@@ -34,7 +34,7 @@ public class Sockets {
                 Socket clientSocket = serverSocket.accept(); //Blocking method call...It won't return until
                 //A client socket connects
                 
-                System.out.println("A client connected.")
+                System.out.println("A client connected.");
 
                 ThreadedSocket threadedSocket = new ThreadedSocket(clientSocket);
                 Thread thread = new Thread(threadedSocket);
