@@ -34,7 +34,7 @@ public class ThreadedSocket implements Runnable {
             String[] httpArgs = line.split(" ");
             
             String url = httpArgs[1];
-            if(url.includes("..")
+            if(url.contains(".."))
                 {
                     throw new Exception("Stop trying to hack!");
                 }
