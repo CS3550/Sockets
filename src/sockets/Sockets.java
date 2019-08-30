@@ -26,7 +26,7 @@ public class Sockets {
      */
     public static void main(String[] args) {
         try {
-            System.out.println("Started the program.")
+            System.out.println("Started the program.");
             ServerSocket serverSocket = new ServerSocket(5000);
 
             while (true) {
